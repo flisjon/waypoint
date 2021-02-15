@@ -3,7 +3,7 @@ const multer = require('multer')
 const path = require('path')
 const router = express.Router()
 const Book = require('../models/book')
-const imageMimeTypes = ['images/jpeg', 'images/png', 'images/gif']
+const imageMimeTypes = ['image/jpeg', 'image/png', 'image/gif']
 const Author = require('../models/author')
 const uploadPath = path.join('public', Book.coverImageBasePath)
 
@@ -11,7 +11,7 @@ const uploadPath = path.join('public', Book.coverImageBasePath)
 const upload = multer({
     dest: uploadPath,
     fileFilter: (req, file, callback) => {
-        callback(null, )
+        callback(null, imageMimeTypes.includes(file.mimetype))
     }
 })
 
