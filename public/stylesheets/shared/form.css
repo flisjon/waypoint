@@ -8,6 +8,7 @@
   .form-row {
     display: flex;
     margin-bottom: .5rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
   
   .form-item {
@@ -45,7 +46,7 @@
     color: var(--color-text-light);
     font-size: 1rem;
     font-weight: normal;
-    font-family: 'Gotham Rounded';
+    font-family: 'Montserrat';
     outline: none;
   }
   
@@ -63,7 +64,7 @@
   }
   
   .filepond--root {
-    font-family: 'Gotham Rounded';
+    font-family: 'Montserrat';
     margin-bottom: 0;
   }
   
